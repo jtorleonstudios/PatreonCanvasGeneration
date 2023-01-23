@@ -1,0 +1,10 @@
+{
+    "disabled_liveServer.settings.CustomBrowser": "chrome", 
+    "disabled_liveServer.settings.root": "./dist",
+    "files.exclude": { 
+        "**/package-lock.json": true,
+        "**/node_modules/**": true,
+        "**/dist/**": false,
+        "**/.git": false
+      }
+}

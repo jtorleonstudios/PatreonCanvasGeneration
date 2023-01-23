@@ -1,0 +1,18 @@
+{
+  "name": "patreoncanvasgeneration",
+  "version": "1.0.0",
+  "description": "Get Patreon data and generate image",
+  "main": "index.js",
+  "scripts": {
+    "task": "echo \"test tasks success\""
+  },
+  "keywords": [
+    "NPM",
+    "Typescript",
+    "NodeJS",
+    "Patreon",
+    "Image"
+  ],
+  "author": "JTorLeon Studios",
+  "license": "MIT"
+}
