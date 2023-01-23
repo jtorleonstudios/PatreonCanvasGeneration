@@ -5,6 +5,6 @@
         "**/package-lock.json": true,
         "**/node_modules/**": true,
         "**/dist/**": false,
-        "**/.git": false
+        "**/.git": true
       }
 }
