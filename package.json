@@ -1,10 +1,16 @@
 {
   "name": "patreoncanvasgeneration",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Get Patreon data and generate image",
   "main": "index.js",
   "scripts": {
-    "task": "echo \"test tasks success\""
+    "___________________[Build]": "____________________________________________",
+    "build": "tsc",
+    "___________________[Task]": "_____________________________________________",
+    "task": "node dist/main.js",
+    "___________________[Utils]": "____________________________________________",
+    "bump": "npm version major --force",
+    "push": "npm run bump && git add . && git commit -m \"default commit %npm_package_version%\" && git push"
   },
   "keywords": [
     "NPM",
@@ -14,5 +20,8 @@
     "Image"
   ],
   "author": "JTorLeon Studios",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^4.9.4"
+  }
 }
