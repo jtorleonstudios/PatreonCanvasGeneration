@@ -50,7 +50,7 @@ $ npm run task
 
 ## Canvas result
 
-[Canvas result](https://github.com/jtorleonstudios/PatreonCanvasGeneration/blob/main/out/image.png?raw=true)
+![Canvas result](https://github.com/jtorleonstudios/PatreonCanvasGeneration/blob/main/out/image.png?raw=true)
 
 ### MIT License 
 
