@@ -6,6 +6,22 @@
 
 Require NodeJS >=v18.7.0.  This project uses NPM for dependencies and project management ([*Getting Started*](https://docs.npmjs.com/getting-started))
 
+Folder structure
+```
+📂/. 
+|
+├── 📂DIST
+│   ├── compiled js
+│   
+├── 📂OUT
+│   ├── output generation
+│
+├── 📂SRC
+│   ├── typscript source
+│
+└── package.json
+```
+
 ## 📦 Install NodeJS, get this repository, and run the npm install command
 
 ```
@@ -21,7 +37,7 @@ $ npm run build
 
 ## 🚀 Run the task
 
-Define PATREON_TOKEN before run task.
+Create .env file and put set the `PATREON_TOKEN` before run task. 
 
 execute .js
 ```
