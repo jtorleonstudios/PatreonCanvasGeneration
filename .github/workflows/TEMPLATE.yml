@@ -1,5 +1,5 @@
 name: template
-run-name: ${{ github.actor }} is learning GitHub Actions
+run-name: ${{ github.actor }} - Patreon Canvas Generation
 on: [push]
 jobs:
   build:
@@ -17,6 +17,7 @@ jobs:
       - name: create env file
         run: |
           touch .env
+          echo ${{ secrets.PATREON_TOKEN }}
           echo PATREON_TOKEN=${{ secrets.PATREON_TOKEN }} >> .env
 
       - name: Run Task
