@@ -14,7 +14,7 @@ const canvas_1 = require("canvas");
 class CanvasProcess {
     static start(active, other) {
         return __awaiter(this, void 0, void 0, function* () {
-            (0, canvas_1.registerFont)('seguiemj.ttf', { family: 'Segoe' });
+            (0, canvas_1.registerFont)('./seguiemj.ttf', { family: 'Segoe' });
             const outCanvas = (0, canvas_1.createCanvas)(CanvasProcess.CONFIG.width, CanvasProcess.CONFIG.height);
             const context = outCanvas.getContext('2d');
             context.clearRect(0, 0, CanvasProcess.CONFIG.width, CanvasProcess.CONFIG.height);

@@ -7,7 +7,7 @@ export class CanvasProcess {
     }
 
     static async start(active: Map<string, any>, other: Map<string, any>) { 
-        registerFont('seguiemj.ttf', { family: 'Segoe' })
+        registerFont('./seguiemj.ttf', { family: 'Segoe' })
 
         const outCanvas = createCanvas(CanvasProcess.CONFIG.width, CanvasProcess.CONFIG.height)
         const context = outCanvas.getContext('2d')
