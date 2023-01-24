@@ -6,7 +6,6 @@ import { CanvasProcess } from "./CanvasProcess"
 import * as dotenv from 'dotenv'
 dotenv.config()
 
-console.log(process.env.PATREON_TOKEN)
 PatreonProcess.TOKEN = process.env.PATREON_TOKEN;
 
 (async () => {

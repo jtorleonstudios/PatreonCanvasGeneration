@@ -36,7 +36,9 @@ const fs = __importStar(require("fs"));
 const path = __importStar(require("path"));
 const PatreonProcess_1 = require("./PatreonProcess");
 const CanvasProcess_1 = require("./CanvasProcess");
-PatreonProcess_1.PatreonProcess.TOKEN = PATREON_TOKEN;
+const dotenv = __importStar(require("dotenv"));
+dotenv.config();
+PatreonProcess_1.PatreonProcess.TOKEN = process.env.PATREON_TOKEN;
 (() => __awaiter(void 0, void 0, void 0, function* () {
     // Get all campaigns for current users
     let campaignsIdentifier = yield PatreonProcess_1.PatreonProcess.getAllCompaigns();
