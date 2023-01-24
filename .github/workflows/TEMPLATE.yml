@@ -1,6 +1,8 @@
 name: template
 run-name: ${{ github.actor }} is learning GitHub Actions
 on: [push]
+env:
+  PATREON_TOKEN: ${{ secrets.PATREON_TOKEN }}
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -16,9 +18,7 @@ jobs:
 
       - name: Run Task
         run: npm run task
-        env:
-          PATREON_TOKEN: ${{ secrets.PATREON_TOKEN }}
-
+ 
       - name: Commit files
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
