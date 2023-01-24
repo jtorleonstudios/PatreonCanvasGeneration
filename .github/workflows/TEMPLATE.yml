@@ -13,15 +13,14 @@ jobs:
 
       - name: Install dependencies
         run: npm install
-
-      - name: Run Task
-        run: npm run task
-
  
       - name: create env file
         run: |
           touch .env
           echo PATREON_TOKEN=${{ secrets.PATREON_TOKEN }} >> .env
+
+      - name: Run Task
+        run: npm run task
  
       - name: Commit files
         run: |
