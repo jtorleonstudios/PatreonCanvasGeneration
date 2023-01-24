@@ -1,8 +1,6 @@
 name: template
 run-name: ${{ github.actor }} is learning GitHub Actions
 on: [push]
-env:
-  PATREON_TOKEN: ${{ secrets.PATREON_TOKEN }}
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -18,6 +16,12 @@ jobs:
 
       - name: Run Task
         run: npm run task
+
+ 
+      - name: create env file
+        run: |
+          touch .env
+          echo PATREON_TOKEN=${{ secrets.PATREON_TOKEN }} >> .env
  
       - name: Commit files
         run: |

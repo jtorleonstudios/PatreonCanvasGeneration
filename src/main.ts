@@ -3,10 +3,11 @@ import * as url from "url"
 import * as path from "path"
 import { PatreonProcess } from "./PatreonProcess"
 import { CanvasProcess } from "./CanvasProcess"
+import * as dotenv from 'dotenv'
+dotenv.config()
 
-declare var PATREON_TOKEN: any;
-PatreonProcess.TOKEN = PATREON_TOKEN;
-
+console.log(process.env.PATREON_TOKEN)
+PatreonProcess.TOKEN = process.env.PATREON_TOKEN;
 
 (async () => {
     // Get all campaigns for current users
